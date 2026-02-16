@@ -1,11 +1,17 @@
 {
   "name": "wibble-wobble-server",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "Serveur privé pour Yo-kai Watch Wibble Wobble - Logique serveur/client complète",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "node server/server.js",
+    "client": "node client/client.js",
+    "dev": "node server/server.js & sleep 2 && node client/client.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "cors": "^2.8.5"
   }
 }
